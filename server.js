@@ -59,7 +59,7 @@ app.get('/',(req, res)=>{res.send(dataBase.users);
  })
   
  app.listen(5000,()=>{
-    console.log("app is running");
+    console.log("app is running on port 5000");
 })
 
 

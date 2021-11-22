@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  my-app:
+    image: walaaelgenidy/node-express-pg:v3
+    ports:
+      - 5000:5000
+  postgrsqldb:
+    image: postgres
+    ports:
+     - 5432:5432
+    restart: always
+    environment:
+      POSTGRES_DB: facedetection
+      POSTGRES_PASSWORD: test
+      POSTGRES_USER: postgres
